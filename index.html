@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Robot Teacher</title>
+
+    <!-- Google Font for the heading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --brand-gold: #f1b22d;
+        --brand-navy: #002039;
+        --text-light: #f7f8fa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+        background: var(--brand-navy);
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--brand-gold);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* ---------- Hero Section ---------- */
+      .hero {
+        position: relative;
+        text-align: center;
+        padding: 8rem 1rem 5rem;
+        background: url("assets/my-robot-teacher-cover.png") center/cover,
+          var(--brand-navy);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 32, 57, 0.7); /* dark overlay for legibility */
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+        color: var(--brand-gold);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .tagline {
+        font-size: 1.25rem;
+        font-weight: 400;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* ---------- About Section ---------- */
+      section {
+        padding: 4rem 1rem;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        color: var(--brand-gold);
+        margin-bottom: 1rem;
+      }
+
+      /* ---------- Episodes Section ---------- */
+      .episodes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .episode-card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 1.5rem;
+        transition: transform 0.2s ease;
+      }
+      .episode-card:hover {
+        transform: translateY(-6px);
+      }
+
+      .episode-number {
+        font-size: 0.9rem;
+        opacity: 0.7;
+        margin-bottom: 0.25rem;
+      }
+      .episode-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 0 0 0.5rem;
+      }
+
+      /* ---------- Footer ---------- */
+      footer {
+        background: #00172c;
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+      }
+      .social-links a {
+        margin: 0 0.5rem;
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>My Robot Teacher</h1>
+        <p class="tagline">
+          A playful, probing journey into how artificial intelligence is—quietly
+          but profoundly—changing the way we teach, learn, and imagine what it
+          means to be human.
+        </p>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="section-title">About the Show</h2>
+      <p>
+        <strong>My Robot Teacher</strong> is an independently produced podcast by
+        <em>Sarah Senk</em> and <em>Taiyo Inoue</em>—two Cal Maritime faculty who
+        spend their days thinking about literature, ethics, and the bureaucratic
+        black holes of higher‑ed. Each episode blends
+        documentary‑style storytelling with mischievous humor to explore the
+        promises, perils, and everyday absurdities of AI in education.
+      </p>
+    </section>
+
+    <!-- Episodes -->
+    <section id="episodes">
+      <h2 class="section-title">Episodes</h2>
+      <div class="episodes">
+        <!-- Repeat a card per episode; add links when published -->
+        <div class="episode-card">
+          <div class="episode-number">Episode 1</div>
+          <div class="episode-title">Resistance is Futile—And Brief</div>
+          <p>Why our fear of new tech fades the minute we start playing with it.</p>
+        </div>
+        <div class="episode-card">
+          <div class="episode-number">Episode 2</div>
+          <div class="episode-title">AI Crash Course—What You Missed (and Why It Matters)</div>
+          <p>An espresso‑shot primer on the concepts everyone pretends to know.</p>
+        </div>
+        <div class="episode-card">
+          <div class="episode-number">Episode 3</div>
+          <div class="episode-title">The Big Debates—Optimists, Skeptics &amp; Why They're Both Right</div>
+          <p>A friendly cage‑match of competing visions for our algorithmic future.</p>
+        </div>
+        <div class="episode-card">
+          <div class="episode-number">Episode 4</div>
+          <div class="episode-title">Back‑to‑School Special</div>
+          <p>Hands‑on tips for teaching (and learning) in the age of AI.</p>
+        </div>
+        <div class="episode-card">
+          <div class="episode-number">Episode 5</div>
+          <div class="episode-title">Justice, Equity &amp; AI—What Do We Owe Each Other?</div>
+          <p>How algorithms amplify—and can help repair—social inequities.</p>
+        </div>
+        <div class="episode-card">
+          <div class="episode-number">Episode 6</div>
+          <div class="episode-title">Creativity Unbound—AI and the Future of Imagination</div>
+          <p>From co‑creating poetry to deep‑faking Shakespeare: the good, bad, and bizarre.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title">Stay in the Loop</h2>
+      <p>
+        Got a question, a guest suggestion, or a spicy hot‑take? Drop us a line
+        at <a href="mailto:hello@myrobotteacher.ai">hello@myrobotteacher.ai</a>
+        or find us on the socials below.
+      </p>
+    </section>
+
+    <footer>
+      <div class="social-links">
+        <!-- Replace # with your live links -->
+        <a href="#" aria-label="Twitter / X">🐦</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="LinkedIn">🔗</a>
+      </div>
+      <p>&copy; <span id="year"></span> My Robot Teacher. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Update the copyright year automatically
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
